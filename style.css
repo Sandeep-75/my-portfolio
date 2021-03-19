@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--danger);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-nav {
+  width: 100%;
+  background: rgb(190, 49, 68);
+  padding: 0px !important;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+}
+.all-nav-items .nav-item {
+  padding: 10px;
+}
+.all-nav-items .nav-item a {
+  color: white !important;
+  font-size: 24px;
+}
+.all-nav-items .nav-item:hover {
+  background-color: #45567d;
+}
+
+/* intro section */
+.jumbotron {
+  top: 70px;
+  position: relative;
+  height: 600px;
+  border-radius: 0 !important;
+}
+
+.main-project {
+  background-color: rgb(69, 86, 125);
+  height: auto;
+  text-align: center;
+  margin-top: 67px;
+}
+
+.project-text {
+  font-size: 40px;
+  color: white;
+  border-bottom: 2px solid;
+}
+.project-link:hover {
+  text-decoration: none;
+}
+.card {
+  width: 360px !important;
+  height: 510px !important;
+  border: none !important;
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  background-color: rgb(48, 56, 65);
+  margin: auto;
+}
+
+.card-img {
+  width: 100% !important;
+  height: 85% !important;
+  border-radius: 0 !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-clip: border-box !important;
+  background-repeat: no-repeat !important;
+}
+
+.card-body {
+  background-color: rgb(48, 56, 65);
+  color: white;
+}
+.s-a {
+  background-color: rgb(48, 56, 65) !important;
+  color: white;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.s-a:hover {
+  background-color: rgb(190, 49, 68) !important;
+}
+
+.social {
+  width: 100%;
+  height: 400px;
+  color: white;
+  background-color: rgb(48, 56, 65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social h1 {
+  font-size: 60px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.social p {
+  font-size: 18px;
+  font-style: italic;
+  font-family: "Raleway";
+}
+.social-links {
+  display: flex;
+  width: 54%;
+  justify-content: space-around;
+  font-size: 25px;
+}
+.social-links a {
+  font-size: 22px;
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  font-weight: 700;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: all 0.3s ease-in-out;
+}
+.social-links a:hover {
+  text-decoration: none !important;
+  color: rgb(240, 240, 240) !important;
+  transform: translateY(8px);
+}
+.footer {
+  background-color: rgb(48, 56, 65);
+  border-top: 5px solid rgb(173, 48, 65);
+  color: rgb(240, 240, 240);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  font-size: 22px;
+}
+
+@media (max-width: 575.98px) {
+  nav {
+    padding: 15px 0 !important;
+    height: 70px;
+  }
+
+  .navbar-collapse {
+    position: absolute !important;
+    width: 100% !important;
+    top: 70px;
+  }
+
+  .jumbotron {
+    height: 430px !important;
+    border-radius: 0 !important;
+  }
+  .project-text {
+    font-size: 24px;
+    border-bottom: 2px solid;
+  }
+
+  .container {
+    padding: 10px 15px !important;
+  }
+  .card {
+    width: 75% !important;
+    height: 400px !important;
+  }
+  .social {
+    padding: 10px;
+  }
+  .social-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+  }
+  .social-links a {
+    margin: 10px 0;
+  }
+  .social h1 {
+    font-size: 27px;
+  }
+  .social p {
+    font-size: 12px;
+  }
+  .footer {
+    font-size: 17px;
+  }
+}
